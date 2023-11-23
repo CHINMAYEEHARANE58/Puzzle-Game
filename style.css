@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&display=swap');
+
+*{
+    font-family: 'Istok Web', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+body{
+    margin: 0px;
+}
+
+/* main page */
+#gamepage{
+    height: 100vh;
+    width: 100vw;
+}
+
+#bg-img{
+    height: 100vh;
+    width: 100vw;
+}
+
+#logo{
+    height: 7rem;
+    width: 24rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 37.5rem;
+    bottom: 18rem;
+    /* border: 1px solid red ; */
+}
+
+#logo img{
+    height: 7rem;
+    width: 24rem;
+}
+
+#name{
+    border: 0px;
+    position: absolute;
+    width: 17rem;
+    height: 2.5rem;
+    left: 32rem;
+    bottom: 18rem;
+    font-size: 25px;
+    border-radius: 16px;
+    color: black;
+
+}
+
+#nickname{
+    border: 0px;
+    position: absolute;
+    width: 15rem;
+    height: 2rem;
+    left: 33rem;
+    bottom: 14.5rem;
+    font-size: 17px;
+    color: black;
+    border-radius: 16px;
+}
+
+#play-button{
+    border: 0px;
+    position: absolute;
+    height: 3rem;
+    width: 13rem;
+    left: 34rem;
+    bottom: 8rem;
+    border-radius: 50px;
+    background-color: rgba(241, 72, 122, 1);
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+
+#play-button:hover{
+    background-color: #5698d0;
+    transform: scale(1.1);
+}
+
+::placeholder{
+    color: rgba(175, 172, 172, 1);
+}
+
+/* Instructions */
+
+#instructions{
+    position: absolute;
+    background-color: aliceblue;
+    left: 24rem;
+    bottom: 10rem;
+    height: 23rem;
+    width: 32rem;
+    border-radius: 16px;
+    padding: 2rem;
+    border: 1px solid red ;
+
+
+}
+
+#start-button{
+    border: 0px;
+    position: absolute;
+    height: 3rem;
+    width: 13rem;
+    left: 34rem;
+    bottom: 4rem;
+    border-radius: 35px;
+    background-color: rgba(241, 72, 122, 1);
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+
+#start-button:hover{
+    background-color: #5698d0;
+    transform: scale(1.1);
+}
+
+#displayInfo{
+    color: #5698d0;
+    font-size: 19px;
+    font-weight: 9rem;
+}
+
+h3{
+    color: black;
+    font-size: 19px;
+    font-weight: 10rem;
+    padding: 1rem 0rem ;
+}
+
+p{
+    color: rgb(51, 49, 49);
+    font-size: 17px;
+    gap: 2rem;
+    padding-left: 1.1rem;
+}
+
+.back{
+    border: 0;
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    left: 1.5rem;
+    bottom: 33rem;
+    border-radius: 50px;
+    background-color: rgba(241, 72, 122, 1);
+    transition: 0.5s ease;
+}
+
+.back img{
+    margin-top: 0.4rem;
+    transform: scale(1.1);
+}
+
+.back:hover{
+    background-color: #5698d0;
+}
+
+/* result */
+
+#playAgain{
+    border: 0px;
+    position: absolute;
+    height: 4rem;
+    width: 20rem;
+    left: 50rem;
+    bottom: 4rem;
+    border-radius: 50px;
+    background-color: rgba(241, 72, 122, 1);
+    font-size: 45px;
+    font-weight: bold;
+}
+
+#pictures-container{
+    position: absolute;
+    width: 80rem;
+    height: 40rem;
+    left: 20rem;
+    bottom: 9rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 2rem;
+
+}
+
+.pictures{
+    width: 20rem;
+    height: 14rem;
+    font-size: 40px;
+    border-radius: 16px;
+}
+
+.pictures img{
+    width: 20rem;
+    height: 14rem;
+}
+
+h2{
+    position: absolute;
+    font-size: 40px;
+    left: 34rem;
+    bottom: 50rem;
+}
+
+
+/* responsive */
+@media screen and  (max-width: 264px)
+{   
+    #gamepage{
+        height: 100vh;
+        width: 100vw;
+        border: 1px solid red;
+    }
+
+    #bg-img{
+        background-image: url('./Images/mobile\ screen\ -\ 4.png');
+        background-size: cover;
+    }
+
+    #logo{
+        height: 70px;
+        width: 14rem;
+        left: 7.5rem;
+        bottom: 17rem;
+        /* border: 1px solid rgb(181, 33, 33); */
+    }
+    
+    #logo img{
+        height: 70px;
+        width: 14rem;
+    }
+    
+    #name{
+        width: 10.5rem;
+        height: 2.1rem;
+        left: 3.2rem;
+        bottom: 16rem;
+        font-size: 16px;
+        border-radius: 12px;
+    }
+    
+    #nickname{
+        width: 9.5rem;
+        height: 1.9rem;
+        left: 3.7rem;
+        bottom: 12rem;
+        font-size: 13px;
+        border-radius: 12px;
+    }
+    
+    #play-button{
+        height: 2.8rem;
+        width: 9rem;
+        left: 4rem;
+        bottom: 7rem;
+        font-size: 25px;
+    }
+    
+    
+/* Instructions */
+
+#instructions{
+    left: 1rem;
+    bottom: 12rem;
+    height: 14rem;
+    width: 14.5rem;
+    border-radius: 14px;
+    padding: 10px;
+}
+
+#start-button{
+    height: 2.8rem;
+    width: 9rem;
+    left: 4rem;
+    bottom: 6rem;
+    font-size: 25px;
+}
+
+h3{
+    font-size: 11px;
+    font-weight: 9rem;
+    padding: 0.7rem 0px;
+}
+
+p{
+    font-size: 9px;
+    line-height: 1.1rem;
+    padding-left: 0.3rem;
+}
+
+.back{
+    height: 30px;
+    width: 30px;
+    left: 0.7rem;
+    bottom: 29.1rem;
+}
+
+.back img{
+    margin-top: 0.3rem;
+    width: 20px;
+    height: 20px;
+}
+
+/* result */
+
+#playAgain{
+    height: 2.8rem;
+    width: 10rem;
+    left: 3.5rem;
+    bottom: 6rem;
+    font-size: 25px;
+}
+
+#pictures-container{
+    width: 14.5rem;
+    height: 15rem;
+    left: 1rem;
+    bottom: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem 0rem;
+}
+
+.pictures{
+    width: 80px;
+    height: 60px;
+    font-size: 40px;
+    border-radius: 6px;
+}
+
+.pictures img{
+    width: 80px;
+    height: 60px;
+}
+
+h2{
+    font-size: 18px;
+    left: 0.3rem;
+    bottom: 26rem;
+    padding: 0rem 1rem;
+}
+}
